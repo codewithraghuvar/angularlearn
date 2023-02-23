@@ -1,12 +1,18 @@
-header {
+.nav-bar-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #232f3e;
+  background-color: #0c0b0b;
   color: #fff;
   padding: 10px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  a {
+   
+
+  }
 }
+
+
 
 .logo-container img {
   height: 30px;

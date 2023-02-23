@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
   products:any = [
-    {id:1, name: 'Watch', price: 100, color: 'black',available: 'Available', image:'assets/images/products/watch.jpg'},
-    {id:2, name: 'Mobile', price: 200, color: 'black',available: 'Not Available', image:'assets/images/products/mobile.jpg'},
-    {id:3, name: 'TV', price: 300, color: 'black',available: 'Available', image:'assets/images/products/tv.jpg'},
-    {id:4, name: 'Freeze', price: 500, color: 'black',available: 'Not Available', image:'assets/images/products/freeze.jpg'}
+    {id:1, name: 'Orange kids shoe', price: 250, color: 'orance',available: 'Available', image:'./assets/products/shoe1.jpeg'},
+    {id:2, name: 'Flip Flop Kids', price: 200, color: 'grey',available: 'Not Available', image:'./assets/products/shoe2.jpeg'},
+    {id:3, name: 'Sports shoe kids', price: 300, color: 'grey',available: 'Available', image:'./assets/products/shoe3.jpeg'},
+    {id:4, name: 'Sleeper Kids', price: 500, color: 'white',available: 'Not Available', image:'./assets/products/shoe4.jpeg'}
     ]
 }

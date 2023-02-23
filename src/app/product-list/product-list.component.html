@@ -1,20 +1,20 @@
-<div class="products-conatiner" *ngFor="let product of products">
-    <div class="product-details">
-        <div class="image-container">
-            <img src=""/>
-        </div>
-        <div>
+<div class="products-conatiner" *ngFor="let product of products">    
+    <div class="image-container">
+        <img [src]="product.image"/>
+    </div>
+    <div class="product-details"> 
+        <div>       
             <div class="name-container">{{product.name}}</div>
-            <div class="details-container">
-              <div class="details">{{product.available}}</div>
-              <div class="details">Price:{{product.price}}</div>
-              <div class="details">Color:{{product.color}}</div>
-            </div>
+            <div class="details">{{product.available}}</div>
+        </div>
+        <div class="details-container">
+            <div class="details">Price:{{product.price}}</div>
+            <div class="details">Color:{{product.color}}</div>
         </div>
     </div>
     <div class="action-container">
-        <button>Add</button>
-        <button>View Details</button>
+        <button class="primary-button">Add</button>
+        <button class="secondary-button">View Details</button>
 
     </div>
 </div>
