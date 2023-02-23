@@ -1,1 +1,20 @@
-<p>product-list works!</p>
+<div class="products-conatiner" *ngFor="let product of products">
+    <div class="product-details">
+        <div class="image-container">
+            <img src=""/>
+        </div>
+        <div>
+            <div class="name-container">{{product.name}}</div>
+            <div class="details-container">
+              <div class="details">{{product.available}}</div>
+              <div class="details">Price:{{product.price}}</div>
+              <div class="details">Color:{{product.color}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="action-container">
+        <button>Add</button>
+        <button>View Details</button>
+
+    </div>
+</div>
