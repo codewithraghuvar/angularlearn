@@ -1,0 +1,18 @@
+<div class="side-filter">
+<form>    
+    <span>{{filterHeaderText}}</span>
+    <div class="checkbox-items">
+        <div *ngFor="let item of listOfItems" >
+          <input 
+            type="checkbox" 
+            class="form-check-input"
+            name="filter" 
+            [(ngModel)]="item.isChecked" 
+            value="item.label"
+            (change)="changeSelection()">
+          {{item.label}}
+        </div>
+    </div>
+   = {{checkedIDs}}=
+</form>
+</div>

@@ -1,20 +1,34 @@
-<div class="products-conatiner" *ngFor="let product of products">    
-    <div class="image-container">
-        <img [src]="product.image"/>
-    </div>
-    <div class="product-details"> 
-        <div>       
-            <div class="name-container">{{product.name}}</div>
-            <div class="details">{{product.available}}</div>
+<div class="products-list">    
+    <div class="products-conatiner" *ngFor="let product of products">    
+        <div class="image-container">
+            <img [src]="product.image"/>
         </div>
-        <div class="details-container">
-            <div class="details">Price:{{product.price}}</div>
-            <div class="details">Color:{{product.color}}</div>
+        <div class="product-details"> 
+            <div>       
+                <div class="name-container">{{product.name}}</div>
+                <div class="available" [ngStyle]="{color: product.available === 'available'? 'green' : 'red'}">{{product.available}}</div>
+            </div>
+            <div class="details-container">
+                <div class="price">Price: {{product.price}}</div>
+                <div class="color">Color: {{product.color}}</div>
+            </div>
         </div>
-    </div>
-    <div class="action-container">
-        <button class="primary-button">Add</button>
-        <button class="secondary-button">View Details</button>
+        <div class="action-container">      
+            <button 
+                type="button" 
+                class="btn btn-info me-1">
+                View Details
+            </button>           
+            <button 
+                type="button" 
+                class="btn btn-success me-1"  
+                *ngIf="product.available === 'available'; else notifyme">
+                Buy Now
+            </button>
+            <ng-template #notifyme>
+                <button type="button" class="btn btn-warning me-1">Nofitfy</button>
+            </ng-template>
 
+        </div>
     </div>
 </div>

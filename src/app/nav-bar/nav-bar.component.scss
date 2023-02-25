@@ -1,43 +1,59 @@
-.nav-bar-flex {
+.header-top {
+ position: fixed;
+ width:100%;
+}
+.nav-bar-flex {  
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #0c0b0b;
   color: #fff;
-  padding: 10px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-  a {
-   
+  
+}
 
+.navigation-container {
+  margin-right:1rem;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin-left:2rem;
+    &:hover {
+      color:orange
+    }
+    
+  }
+
+  .men {
+    &:hover {
+      font-weight: 600;
+      color: rgb(0, 247, 255)
+    }
+    
+  }
+  .women {
+    &:hover {
+      font-weight: 600;
+      color: rgb(245, 101, 197)
+    }    
+  }
+
+  .kids {
+    &:hover {
+      font-weight: 600;
+      color: rgb(81, 247, 40)
+    }    
+  }
+  
+  .beauty {
+    &:hover {
+      font-weight: 600;
+      color: rgb(216, 247, 40)
+    }    
   }
 }
 
-
-
 .logo-container img {
   height: 30px;
-}
-
-.search-container form {
-  display: flex;
-  align-items: center;
-}
-
-.search-container input[type="text"] {
-  border: none;
-  border-radius: 3px;
-  padding: 8px 10px;
-  font-size: 14px;
-  margin-right: 5px;
-  width: 400px;
-}
-
-.search-container button[type="submit"] {
-  border: none;
-  background-color: #febd69;
-  color: #232f3e;
-  border-radius: 3px;
-  padding: 8px 12px;
-  font-size: 14px;
-  cursor: pointer;
 }
