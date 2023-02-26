@@ -63,7 +63,7 @@ export class ContainerComponent {
       name: 'Flip Flop Kids', 
       price: 200, 
       color: 'grey',
-      category: 'sports shoe',
+      category: 'sandals',
       available: 'not available', 
       image:'./assets/products/shoe2.jpeg',
       productFor: 'boy'
@@ -73,7 +73,7 @@ export class ContainerComponent {
       name: 'Sports shoe kids', 
       price: 300, 
       color: 'grey',
-      category: 'sandals',
+      category: 'sports shoe',
       available: 'available', 
       image:'./assets/products/shoe3.jpeg',
       productFor: 'girl'

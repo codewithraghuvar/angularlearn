@@ -1,14 +1,10 @@
-<div>
-<app-header></app-header>
-<search-filter/>
 <div class="main-conatiner">
     <side-filter 
         [itemList]="itemList"
         [filterHeaderText]="filterHeaderText"
         (selectedItems)="selectedItems($event)"
         />
-    <product-list
+    <app-products
         [products]="getProducts()"
-        />
-</div>
+        />  
 </div>

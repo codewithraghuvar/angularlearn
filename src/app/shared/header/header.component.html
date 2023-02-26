@@ -1,0 +1,23 @@
+<nav class="header-top nav-bar-flex">  
+    <div class="logo-img navigation-container">
+      <a class="" href="#">
+        <img src="./assets/images/amazon-black-logo.png"  width="150px" height="45px">
+      </a>    
+      <a [routerLinkActive]="'men'" routerLink="men">Men</a>
+      <a [routerLinkActive]="'women'" routerLink="women">Women</a>
+      <a [routerLinkActive]="'kids'" routerLink="kids">Kids</a> 
+      <a [routerLinkActive]="'beauty'" routerLink="beauty">Beauty</a>   
+    </div>
+    <div>
+      <search-filter/>
+    </div>    
+    <div class="navigation-container">
+      <a [routerLinkActive]="'profile'" routerLink="profile">Profile</a>    
+      <a [routerLinkActive]="'wislist'" routerLink="wislist">Wishlist</a>
+      <a [routerLinkActive]="'cart'" routerLink="cart">      
+      <img src="./assets/images/cart.png" width="50px" height="45px">
+      </a>
+      
+    </div>
+  </nav>
+  
